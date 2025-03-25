@@ -3,20 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-     
-    <h1>Yodha1:-Maharana Pratap</h1>
-    <h1>Yodha2:-Chatrapati Shivaji Maharaj</h1>
-    <h1>Yodha3:-Bappa Rawal</h1>
-    <h1>Yodha4:-Surajmal Jat</h1>
-    <h1>Yodha5:-Prithviraj Chauhan</h1>
+    <header>
+        <h1 class="logo">Portfolio.</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <img src="c:\Users\Admin\Downloads\Maharana pratap.png" alt="">
-    <img src="c:\Users\Admin\Downloads\chhtraptishivaji.jpg" alt="">
-    <img src="c:\Users\Admin\Downloads\बप्पा रावल  कालभोज  (734 –753ई.)_20240129_162132_0000.jpg" alt="">
-    <img src="c:\Users\Admin\Downloads\MAHARAJA SURAJMAL JAT_. हिंदू धर्म रक्षक Wallpaper" alt="">
-    <img src="c:\Users\Admin\Downloads\Pruthviraj Chauhan.jpg" alt="">
-</body>
-</html>
+  <!-- Home Section -->
+<section id="home" class="home">
+    <div class="content">
+        <h2>Saurabh Dharma Kore</h2>
+        <h2 class="web-developer">I'm a Web Developer</h2> <!-- Animated Text Here -->
+        <p>I specialize in building responsive, visually appealing, and high-performance websites.</p>
+        <button class="btn">Download CV</button>
+        <div class="image-container">
+            <img src="image.png" alt="Your Profile Picture" class="profile-image">
+        </div>
+        
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</section>
+
+
+   <!-- About Section -->
+<section id="about" class="section">
+    <h2 class="animate-text">About Me</h2>
+    <p class="animate-text">I am a passionate web developer and an Electronics & Telecommunication Engineering student.</p>
+
+    <div class="about-content">
+        <div class="about-box">
+            <h3 class="animate-text">Education</h3>
+            <ul>
+                <li>Completed 1st to 10th grade (10th: <b>82%</b>)</li>
+                <li>Completed 11th & 12th (12th: <b>67%</b>)</li>
+                <li>Currently pursuing <b>BTech in Electronics & Telecommunication Engineering</b></li>
+            </ul>
+        </div>
+
+        <div class="about-box">
+            <h3 class="animate-text">Skills</h3>
+            <ul>
+                <li>Web Development</li>
+                <li>Python Programming</li>
+                <li>C Programming</li>
+                <li>HTML & CSS</li>
+                <li>PCB Simulation</li>
+                <li>Electronic System Making</li>
+                <li>Forex Trading</li>
+                <li>Share Marketing</li>
+            </ul>
+        </div>
+
+        <div class="about-box">
+            <h3 class="animate-text">Experience</h3>
+            <ul>
+                <li>1 Year Experience in PCB Simulation</li>
+                <li>2 Years Experience in Web Development</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+  <!-- Portfolio Section -->
+<section id="portfolio" class="section">
+    <h2 class="animate-text">My Portfolio</h2>
+    <p class="animate-text">Here are some of my latest projects...</p>
+
+    <div class="portfolio-container">
+        <div class="portfolio-box">
+            <h3>Project 1: Web Development</h3>
+            <p>Creative and responsive websites using HTML & CSS.</p>
+        </div>
+
+        <div class="portfolio-box">
+            <h3>Project 2: PCB Simulator</h3>
+            <p>Simulating PCB layouts with precision and accuracy.</p>
+        </div>
+
+        <div class="portfolio-box">
+            <h3>Project 3: Forex Chart Market Analysis Bot</h3>
+            <p>Analyzing market trends for better trading decisions.</p>
+        </div>
+    </div>
+</section>
+
+
+  <!-- Services Section -->
+<section id="services" class="section">
+    <h2 class="animate-text">Services</h2>
+    <p class="animate-text">Here are the services I offer:</p>
+
+    <div class="services-container">
+        <div class="service-box">
+            <h3>Web Page Design</h3>
+            <p>Creating stunning and responsive web pages using HTML & CSS.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>PCB Fabrication</h3>
+            <p>Designing and fabricating high-quality PCB layouts.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Electric System Designer</h3>
+            <p>Developing efficient and reliable electronic systems.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Market Analysis</h3>
+            <p>Providing data-driven insights for better decision-making.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Worldwide Market Analysis</h3>
+            <p>Analyzing global trends to optimize trading and investments.</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+<section id="contact" class="section">
+    <h2 class="animate-text">Contact Me</h2>
+    <p class="animate-text">Let's get in touch!</p>
+
+    <div class="contact-container">
+        <div class="contact-box">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <p>saurabhkore@example.com</p>
+        </div>
+
+        <div class="contact-box">
+            <i class="fas fa-phone"></i>
+            <h3>Phone</h3>
+            <p>+91 98765 43210</p>
+        </div>
+
+        <div class="contact-box">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Location</h3>
+            <p>Pune, Maharashtra, India</p>
+        </div>
+    </div>
+</section>
+
