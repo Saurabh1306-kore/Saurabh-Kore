@@ -873,7 +873,7 @@ section {
     font-size: 1.1em;
     line-height: 1.8;
     margin-bottom: 25px;
-    color: #555;
+    color: #07c5fa;  /*here i have changed the colour */
     transition: transform 0.3s ease, color 0.3s ease;
     background-color: #080000;
     padding: 20px;
@@ -1046,4 +1046,259 @@ section {
     box-shadow: 0 0 10px orange;
     border-radius: 50%;
   }
-          
+/* todays modified code 11/04/25           */
+.values-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .values-section h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  .values-section p {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #555;
+  }
+  
+  .values-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .values-list li {
+    background-color: #fff;
+    border-left: 5px solid #0077ff;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .values-list .icon {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  #achievements {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  #achievements h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .certificate {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s ease;
+    max-width: 300px;
+  }
+  
+  .certificate:hover {
+    transform: scale(1.03);
+  }
+  
+  .certificate img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .certificate p {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  #achievements {
+    padding: 50px 20px;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+  }
+  
+  #achievements h2 {
+    font-size: 2rem;
+    color: #00ff88;
+    margin-bottom: 30px;
+  }
+  
+  .certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .personal-goals-section {
+    margin-top: 40px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  
+  .personal-goals-heading {
+    font-size: 28px;
+    color: #00ffd5;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .goal-block {
+    margin-bottom: 25px;
+    padding: 15px 20px;
+    border-left: 4px solid #00ffd5;
+    background-color: rgba(255, 255, 255, 0.02);
+    border-radius: 10px;
+  }
+  
+  .goal-block h4 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .goal-block ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  
+  .goal-block ul li {
+    color: #ccc;
+    margin-bottom: 8px;
+    line-height: 1.6;
+  }
+
+  
+
+ /* Personal Goals Section */
+.personal-goals-section {
+    margin-top: 40px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  
+  /* Animation for fading in */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .personal-goals-heading {
+    font-size: 28px;
+    color: #00ffd5;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: bounceIn 1.5s ease-in-out;
+    opacity: 1; /* Ensure it's visible */
+    visibility: visible; /* Ensure it's not hidden */
+  }
+  
+  /* Bounce animation for the heading */
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Goal Block Styling */
+  .goal-block {
+    margin-bottom: 25px;
+    padding: 15px 20px;
+    border-left: 4px solid #00ffd5;
+    background-color: rgba(255, 255, 255, 0.02);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .goal-block h4 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+    position: relative;
+    animation: fadeInText 1.5s ease-out;
+  }
+  
+  /* Fade-in text animation for goal titles */
+  @keyframes fadeInText {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .goal-block ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  
+  .goal-block ul li {
+    color: #ccc;
+    margin-bottom: 8px;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effect for each goal block */
+  .goal-block:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 12px rgba(0, 255, 213, 0.5);
+  }
+  
+  /* Hover effect for list items */
+  .goal-block ul li:hover {
+    color: #00ffd5;
+  }
+  
+  /* Fade-in animation for entire Personal Goals section */
+  .personal-goals-section.fade-in {
+    opacity: 1;
+    animation: fadeIn 1.5s ease-in-out forwards;
+  }
