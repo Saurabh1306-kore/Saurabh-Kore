@@ -1999,3 +1999,30 @@ blockquote::before {
   }
 }
 
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .home-content {
+    flex-direction: column;
+  }
+
+  .home-content img {
+    width: 150px;
+    margin-top: 20px;
+  }
+
+  .home-content h1,
+  .home-content h2 {
+    font-size: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
